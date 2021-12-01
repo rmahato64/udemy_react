@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import "./ExpenseItem.css";
 import { ExpenseDate } from "./ExpenseDate";
-import Card from "./Card";
+import Card from "../UI/Card";
 
-const ExpensesItem = (props) => {
+const ExpenseItem = (props) => {
   //useState is one of the react hooks, hooks usually start with word 'use' and should be call inside components
   const [title, setTitle] = useState(props.title);
 
@@ -24,4 +24,4 @@ const ExpensesItem = (props) => {
   );
 };
 
-export default ExpensesItem;
+export default ExpenseItem;
